@@ -1,7 +1,15 @@
 {
-  "name": "pcnEzoProConLp",
+  "name": "pcn-ezo-prokon",
   "version": "1.0.0",
   "main": "index.js",
   "author": "sKawashima <bysk.333@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "pug": "^3.0.0",
+    "sass": "^1.30.0"
+  },
+  "scripts": {
+    "dev": "parcel src/index.pug"
+  }
 }
