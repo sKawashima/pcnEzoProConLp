@@ -11,11 +11,63 @@
     line-height: 100%
     +tablet
       font-size: 14px
+
   .mainTitle
     font-size: 72px
     font-weight: 900
-    line-height: 100%
+    line-height: 1
     margin-top: 8px
     +tablet
       font-size: 36px
       margin-top: 8px
+
+.sectionEvent
+  .titleEvent
+    font-size: 36px
+    font-weight: 900
+    +tablet
+      font-size: 24px
+
+  .contentEvent
+    margin-top: 24px
+    line-height: 1.7
+  .wrapperInfomationEvent
+    margin-top: 18px
+  .headingEventContent
+    font-size: 14px
+    +tablet
+      font-size: 11px
+
+  .textEventContent
+    font-size: 18px
+    +tablet
+      font-size: 14px
+
+  .textEvemtContentAdditionalInfomation
+    font-size: 18px
+    +tablet
+      font-size: 14px
+
+.titleSectionWrapper
+  font-size: 64px
+  font-weight: 900
+  line-height: 1
+.contentSectionWrapper
+  margin-top: 48px
+  +tablet
+    font-size: 36px
+  &.event
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 96px
+    +tablet
+      grid-template-columns: 1fr
+      grid-gap: 48px
+
+.textSectionWrapper
+  font-size: 18px
+  line-height: 1.7
+  +tablet
+    font-size: 14px
+    br
+      display: none

@@ -1,8 +1,10 @@
+@import responsive
+
 #firstView
   height: 100vh
   background-size: contain
   background-image: url(../img/mainVisual.png)
-  background-attachment: fixed
+  // background-attachment: fixed
   background-repeat: no-repeat
   background-position: center center
   padding: 48px
@@ -19,3 +21,52 @@
     grid-column: 1 / 3
     align-self: flex-end
     margin-bottom: 5vh
+
+.wrapperFillingColorSection
+  padding: 256px 96px
+  +tablet
+    padding: 32px 48px
+  
+  &.green
+    background: #009B53
+    color: #ffffff
+  &.blue
+    background: #089BC1
+    color: #ffffff
+
+.wrapperFCSection
+  padding: 176px 96px
+  background: #EADC79
+  +tablet
+    padding: 16px 48px
+
+  .wrapperFCSectionContent
+    background: #ffffff
+    padding: 80px
+    border-radius: 8px
+    color: #837514
+    display: flex
+    flex-direction: column
+    width: fit-content
+    margin: 0 auto
+    +tablet
+      padding: 32px 16px
+
+    .titleSectionWrapper
+      line-height: 1.2
+    .textSectionWrapper
+      margin-top: 48px
+      line-height: 1.7
+    .wrapperFCInfomation
+      margin-top: 24px
+      line-height: 1.7
+      .headingEventContent
+        font-size: 18px
+        +tablet
+          font-size: 11px
+      .textFCInfomation
+        font-size: 24px
+        +tablet
+          font-size: 14px
+    .buttonFC
+      margin: 48px auto 0

@@ -4,7 +4,7 @@ html(lang='ja')
     title えぞプロコン 2021
     meta(name='viewport', content='width=device-width,initial-scale=1')
   body
-    #firstView
+    section#firstView
       .snsButtons
         a.iconSns(href='#twitter')
           img(
@@ -17,4 +17,54 @@ html(lang='ja')
         span.subTitle PCN こどもプロコン 北海道大会
         span.mainTitle えぞプロコン 2021
 
+    section#about.wrapperFillingColorSection.green
+      h2.titleSectionWrapper ABOUT
+      .contentSectionWrapper
+        p.textSectionWrapper 「えぞプロコン」とは、子供たちにものづくりの楽しさと作ったものを<br />
+          | 人に伝える大切さを感じてもらいたいという想いから立ち上げたコンテストです。<br />
+          | また、えぞプロコンで受賞した作品のうちの数作品が北海道ブロック選抜として<br />
+          | PCNこどもプロコン（全国大会）へ自動エントリーされます。
+
+    section#event.wrapperFillingColorSection.blue
+      h2.titleSectionWrapper EVENT
+      .contentSectionWrapper.event
+        .sectionEvent
+          h3.titleEvent 表彰式
+          .contentEvent
+            .wrapperInfomationEvent
+              h4.headingEventContent 日時
+              p.textEventContent 2021年2月6日（日）10:30~17:30
+            .wrapperInfomationEvent
+              h4.headingEventContent 会場
+              p.textEventContent YouTube（視聴無料）
+            .wrapperInfomationEvent
+              p.textEvemtContentAdditionalInfomation ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報
+        .sectionEvent
+          h3.titleEvent 展示会
+          .contentEvent
+            .wrapperInfomationEvent
+              h4.headingEventContent 日時
+              p.textEventContent.textCollapsible
+                span 2021年2月5日（金）
+                span 〜2月21日（日）
+            .wrapperInfomationEvent
+              h4.headingEventContent 会場
+              p.textEventContent はこだてみらい館
+            .wrapperInfomationEvent
+              h4.headingEventContent 入場料
+              p.textEventContent 300円
+
+    section#forChallenger.wrapperFCSection
+      .wrapperFCSectionContent
+        h2.titleSectionWrapper For Challenger
+        p.textSectionWrapper これからものづくりにチャレンジしてみたい！<br />
+          | 普段作っていて誰かに自慢したい！<br />
+          | という熱い想いをコンテストにぶつけてみませんか？<br />
+          | 皆様からのたくさんの作品応募をお待ちしております。
+        .wrapperFCInfomation
+          h4.headingEventContent 募集期間
+          p.textFCInfomation.textCollapsible
+            span 2020年11月4日（水）
+            span 〜2021年1月7日（木）
+        a.buttonFC コンテストに応募する
     script(src='./index.ts')
