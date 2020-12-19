@@ -1,2 +1,5 @@
 import 'destyle.css'
-import './style.sass'
+import './styles/bass.sass'
+import './styles/atoms.sass'
+import './styles/module.sass'
+import './styles/layout.sass'

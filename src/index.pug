@@ -1,7 +1,20 @@
 doctype
 html(lang='ja')
   head
+    title えぞプロコン 2021
+    meta(name='viewport', content='width=device-width,initial-scale=1')
   body
-    p めう
+    #firstView
+      .snsButtons
+        a.iconSns(href='#twitter')
+          img(
+            src='./img/Twitter_Social_Icon_Rounded_Square_Color.svg',
+            alt='Twitter'
+          )
+      a.logoPcn(href='http://pcn-hakodate.com/')
+        img(src='./img/logo.png', alt='PCN 函館')
+      h1.titleProCon
+        span.subTitle PCN こどもプロコン 北海道大会
+        span.mainTitle えぞプロコン 2021
 
     script(src='./index.ts')
