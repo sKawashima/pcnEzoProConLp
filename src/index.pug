@@ -3,11 +3,31 @@ html(lang='ja')
   head
     title えぞプロコン 2021
     meta(name='viewport', content='width=device-width,initial-scale=1')
+    meta(charset='utf-8')
+    meta(
+      name='description',
+      content='「えぞプロコン」は、子供たちにものづくりの楽しさと作ったものを人に伝える大切さを感じてもらいたいという想いから立ち上げたコンテストです。'
+    )
+    link(rel='icon', href='./img/favicon.ico')
+    meta(property='og:title', content='えぞプロコン 2021')
+    meta(property='og:type', content='website')
+    meta(property='og:url', content='http://pcn-hakodate.com/ezoprocon2021')
+    //- meta(property='og:image' content='http://pcn-hakodate.com/ezoprocon2021/ogp.png')
+    meta(property='og:site_name', content='えぞプロコン 2021')
+    meta(
+      property='og:description',
+      content='「えぞプロコン」は、子供たちにものづくりの楽しさと作ったものを人に伝える大切さを感じてもらいたいという想いから立ち上げたコンテストです。'
+    )
+
   body
     .topviewWrapper
       section#firstView
         .snsButtons
-          a.iconSns(href='#twitter')
+          a.iconSns(
+            href='https://twitter.com/intent/tweet?text=%E3%81%88%E3%81%9E%E3%83%97%E3%83%AD%E3%82%B3%E3%83%B32021%0D%0Ahttp%3A%2F%2Fpcn-hakodate.com%2Fezoprocon2021',
+            target='_blank',
+            rel='noopener noreferrer'
+          )
             img(
               src='./img/Twitter_Social_Icon_Rounded_Square_Color.svg',
               alt='Twitter'
@@ -22,7 +42,7 @@ html(lang='ja')
     section#about.wrapperFillingColorSection.green
       h2.titleSectionWrapper ABOUT
       .contentSectionWrapper
-        p.textSectionWrapper 「えぞプロコン」とは、子供たちにものづくりの楽しさと作ったものを<br />
+        p.textSectionWrapper 「えぞプロコン」は、子供たちにものづくりの楽しさと作ったものを<br />
           | 人に伝える大切さを感じてもらいたいという想いから立ち上げたコンテストです。<br />
           | また、えぞプロコンで受賞した作品のうちの数作品が北海道ブロック選抜として<br />
           | PCNこどもプロコン（全国大会）へ自動エントリーされます。
@@ -35,12 +55,12 @@ html(lang='ja')
           .contentEvent
             .wrapperInfomationEvent
               h4.headingEventContent 日時
-              p.textEventContent 2021年2月6日（日）10:30~17:30
+              p.textEventContent 2021年2月11日（木・祝）10:30~17:30
             .wrapperInfomationEvent
               h4.headingEventContent 会場
               p.textEventContent YouTube（視聴無料）
             .wrapperInfomationEvent
-              p.textEvemtContentAdditionalInfomation ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報ワークショップの情報
+              p.textEvemtContentAdditionalInfomation 表彰式当日はIchigoJamの開発者、福野泰介さんをゲスト講師に迎えた特別ワークショップを開催します！
         .sectionEvent
           h3.titleEvent 展示会
           .contentEvent
@@ -68,7 +88,11 @@ html(lang='ja')
           p.textFCInfomation.textCollapsible
             span 2020年11月4日（水）
             span 〜2021年1月7日（木）
-        a.buttonFC コンテストに応募する
+        a.buttonFC(
+          href='https://pcn.club/contest/',
+          target='_blank',
+          rel='noopener noreferrer'
+        ) コンテストに応募する
     footer.wrapperFooter
       p.textFooterInfomation 主催<br />
         | えぞプロコン実行委員会
