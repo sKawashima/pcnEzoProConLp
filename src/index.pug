@@ -4,18 +4,20 @@ html(lang='ja')
     title えぞプロコン 2021
     meta(name='viewport', content='width=device-width,initial-scale=1')
   body
-    section#firstView
-      .snsButtons
-        a.iconSns(href='#twitter')
-          img(
-            src='./img/Twitter_Social_Icon_Rounded_Square_Color.svg',
-            alt='Twitter'
-          )
-      a.logoPcn(href='http://pcn-hakodate.com/')
-        img(src='./img/logo.png', alt='PCN 函館')
-      h1.titleProCon
-        span.subTitle PCN こどもプロコン 北海道大会
-        span.mainTitle えぞプロコン 2021
+    .topviewWrapper
+      section#firstView
+        .snsButtons
+          a.iconSns(href='#twitter')
+            img(
+              src='./img/Twitter_Social_Icon_Rounded_Square_Color.svg',
+              alt='Twitter'
+            )
+        a.logoPcn(href='http://pcn-hakodate.com/')
+          img(src='./img/logo.png', alt='PCN 函館')
+        h1.titleProCon
+          span.subTitle PCN こどもプロコン 北海道大会
+          span.mainTitle えぞプロコン 2021
+        img.iconChevronDown(src='./img/bi_chevron-down.svg')
 
     section#about.wrapperFillingColorSection.green
       h2.titleSectionWrapper ABOUT
@@ -67,4 +69,9 @@ html(lang='ja')
             span 2020年11月4日（水）
             span 〜2021年1月7日（木）
         a.buttonFC コンテストに応募する
+    footer.wrapperFooter
+      p.textFooterInfomation 主催<br />
+        | えぞプロコン実行委員会
+      p.textFooterInfomation 共催<br />
+        | はこだてみらい館、PCN函館
     script(src='./index.ts')

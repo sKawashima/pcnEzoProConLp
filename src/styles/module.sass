@@ -6,6 +6,7 @@
   align-items: center
   color: #222222
   filter: drop-shadow(0px 0px 24px #FFFFFF) drop-shadow(0px 0px 24px #FFFFFF) drop-shadow(0px 0px 24px #FFFFFF)
+  text-align: center
   .subTitle
     font-size: 18px
     line-height: 100%
@@ -73,3 +74,24 @@
     font-size: 14px
     br
       display: none
+
+.wrapperFooter
+  z-index: 10
+  position: relative
+  color: #ffffff
+  background: #4F4F4F
+  background-size: contain
+  background-image: url(../img/mainVisual.png)
+  background-attachment: fixed
+  background-repeat: no-repeat
+  background-position: center center
+  background-blend-mode: multiply
+  padding: 48px
+  text-align: center
+  .textFooterInfomation
+    font-size: 18px
+    line-height: 1.7
+    &:not(:first-child)
+      margin-top: 24px
+    +tablet
+      font-size: 14px
